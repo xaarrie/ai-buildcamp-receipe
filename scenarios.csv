@@ -1,0 +1,25 @@
+question,category,type
+How do I make spaghetti carbonara?,specific-recipe,direct
+What can I cook with chicken and coconut milk?,ingredient-search,ingredient-based
+I want something easy and healthy for dinner,preference,vague
+How do I make sushi?,missing-recipe,not-in-collection
+What temperature should I set my oven to for the lava cake?,recipe-detail,specific
+Could you walk me through a pasta recipe from your collection?,recipe-discovery,paraphrase
+Which Italian dishes can you help me prepare without meat?,recipe-discovery,cuisine-and-diet
+I have mushrooms and rice; do you have a recipe for that?,recipe-discovery,ingredient-search
+Does your carbonara recipe say bacon can replace guanciale?,substitution,unsupported-guidance
+If I use soy milk instead of milk will your banana pancakes still work?,substitution,unsupported-guidance
+Can I swap coconut oil for butter in your chocolate lava cake?,substitution,unsupported-guidance
+Does the Caesar salad contain anchovies even though it is a salad?,dietary,ingredient-check
+Can someone avoiding fish sauce eat the Thai green curry as written?,dietary,ingredient-check
+Which of your recipes are labeled vegan?,dietary,tag-search
+What are the calories per serving in your falafel wrap?,unavailable-information,nutrition
+How much protein does your mushroom risotto provide?,unavailable-information,nutrition
+Can you give me the ingredients and instructions for ramen?,unavailable-information,missing-recipe
+Can you tell me the weather forecast for tomorrow?,out-of-scope,non-recipe
+How should I repair a leaking kitchen sink?,out-of-scope,non-recipe
+Who won last night's basketball game?,out-of-scope,non-recipe
+Is it okay to use canned chickpeas for your falafel wrap?,recipe-constraint,explicit-prohibition
+Should the miso soup keep boiling after the miso paste goes in?,recipe-constraint,explicit-instruction
+For your carbonara should the egg mixture go into the pan while it is still on the heat?,recipe-constraint,explicit-instruction
+Can I substitute almond milk in the pancakes?,substitution,supported-guidance

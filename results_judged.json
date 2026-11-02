@@ -1,0 +1,362 @@
+[
+  {
+    "question": "How do I make spaghetti carbonara?",
+    "category": "specific-recipe",
+    "type": "direct",
+    "output": "Here's how to make Spaghetti Carbonara:\n\n### Ingredients:\n- Spaghetti\n- Guanciale\n- Egg yolks\n- Pecorino Romano\n- Black pepper\n- Salt\n\n### Instructions:\n1. **Cook the Spaghetti**: Boil spaghetti in salted water until al dente.\n2. **Crisp the Guanciale**: In a pan, cook the guanciale until it becomes crispy.\n3. **Prepare the Egg Mixture**: While the pasta is cooking, whisk together the egg yolks with grated pecorino romano and black pepper.\n4. **Drain the Pasta**: Reserve some pasta water, then drain the spaghetti.\n5. **Combine**: Toss the hot pasta with the crispy guanciale. Off the heat, quickly stir in the egg mixture. Add reserved pasta water as needed to create a creamy sauce.\n6. **Serve**: Plate immediately, garnished with extra pecorino if desired.\n\nEnjoy your delicious Spaghetti Carbonara!",
+    "execution_time": 5.87,
+    "tokens": {
+      "input_tokens": 1258,
+      "output_tokens": 242,
+      "total_tokens": 1500
+    },
+    "cost": 0.000334,
+    "judge_label": "good",
+    "judge_reasoning": "The response accurately provides a recipe for Spaghetti Carbonara, detailing the ingredients and step-by-step instructions without fabricating information or providing external cooking advice."
+  },
+  {
+    "question": "What can I cook with chicken and coconut milk?",
+    "category": "ingredient-search",
+    "type": "ingredient-based",
+    "output": "Here are two recipes you can cook using chicken and coconut milk:\n\n### 1. Thai Green Curry\n- **Cuisine**: Thai\n- **Prep Time**: 20 minutes\n- **Cook Time**: 25 minutes\n- **Servings**: 4\n\n**Ingredients**:\n- Chicken thigh\n- Coconut milk\n- Green curry paste\n- Bamboo shoots\n- Thai basil\n- Fish sauce\n- Palm sugar\n- Eggplant\n- Bell pepper\n- Jasmine rice\n\n**Instructions**:\n1. Heat coconut cream in a wok until oil separates.\n2. Fry the green curry paste for 2 minutes.\n3. Add sliced chicken and cook until sealed.\n4. Pour in coconut milk and bring to a simmer.\n5. Add eggplant and bamboo shoots; cook for 10 minutes.\n6. Season with fish sauce and palm sugar.\n7. Add the bell pepper and Thai basil.\n8. Serve over jasmine rice.\n\n### 2. Chicken Tikka Masala\n- **Cuisine**: Indian\n- **Prep Time**: 30 minutes\n- **Cook Time**: 40 minutes\n- **Servings**: 4\n\n**Ingredients**:\n- Chicken breast\n- Yogurt\n- Garam masala\n- Turmeric\n- Cumin\n- Tomato sauce\n- Heavy cream\n- Garlic\n- Ginger\n- Onion\n- Cilantro\n- Rice\n\n**Instructions**:\n1. Marinate chicken in yogurt, garam masala, turmeric, and cumin for at least 1 hour.\n2. Grill or broil the chicken until charred.\n3. In a pan, saut\u00e9 onion, garlic, and ginger.\n4. Add tomato sauce and spices; simmer for 15 minutes.\n5. Add cream and cooked chicken; simmer for another 10 minutes.\n6. Serve over rice with cilantro.\n\nBoth dishes are flavorful and enjoyable! Let me know if you'd like more details on one of them.",
+    "execution_time": 7.39,
+    "tokens": {
+      "input_tokens": 1767,
+      "output_tokens": 470,
+      "total_tokens": 2237
+    },
+    "cost": 0.000547,
+    "judge_label": "bad",
+    "judge_reasoning": "The response provides two recipes, Thai Green Curry and Chicken Tikka Masala. However, Chicken Tikka Masala does not include coconut milk, which means there's a failure to correctly identify ingredients specifically mentioned in the query. Thus, the assistant provided a recipe that is not accurate to the original question, leading to hallucination."
+  },
+  {
+    "question": "I want something easy and healthy for dinner",
+    "category": "preference",
+    "type": "vague",
+    "output": "Here are some easy and healthy dinner options for you:\n\n1. **Vegetable Stir Fry**\n   - **Prep Time:** 15 minutes\n   - **Cook Time:** 10 minutes\n   - **Serves:** 3\n   - **Ingredients:** Broccoli, bell pepper, carrot, snap peas, soy sauce, sesame oil, garlic, ginger, cornstarch, rice\n   - **Tags:** Vegetarian, vegan, quick, healthy\n\n2. **Miso Soup**\n   - **Prep Time:** 5 minutes\n   - **Cook Time:** 10 minutes\n   - **Serves:** 4\n   - **Ingredients:** Dashi stock, white miso paste, silken tofu, wakame seaweed, green onion\n   - **Tags:** Soup, quick, healthy, vegan-adaptable\n\n3. **Greek Salad**\n   - **Prep Time:** 10 minutes\n   - **Cook Time:** 0 minutes\n   - **Serves:** 4\n   - **Ingredients:** Cucumber, tomato, red onion, Kalamata olives, feta cheese, olive oil, oregano, red wine vinegar\n   - **Tags:** Vegetarian, salad, no-cook, healthy\n\nWould you like more details or instructions on any of these recipes?",
+    "execution_time": 4.2,
+    "tokens": {
+      "input_tokens": 846,
+      "output_tokens": 283,
+      "total_tokens": 1129
+    },
+    "cost": 0.000297,
+    "judge_label": "bad",
+    "judge_reasoning": "The agent provided several recipe options for an easy and healthy dinner, which may imply that it pulled from a recipe collection. However, without knowledge of the recipe collection\u2019s content, I cannot confirm the veracity of the ingredients, times, or tags listed. Additionally, the agent did not clarify whether these recipes come from the queried collection or are made up. Providing recipe options may be necessary if falling within the existing collection, but the specifics require validation from known data, which is not evident. Though the types of responses appear to potentially fit the guidelines, the lack of foundational recipe knowledge creates uncertainty in labeling this as strictly 'good' or 'bad.'"
+  },
+  {
+    "question": "How do I make sushi?",
+    "category": "missing-recipe",
+    "type": "not-in-collection",
+    "output": "I couldn't find a specific recipe for sushi. If you're looking for sushi or any other type of dish, let me know, and I can help you find something similar!",
+    "execution_time": 2.22,
+    "tokens": {
+      "input_tokens": 642,
+      "output_tokens": 53,
+      "total_tokens": 695
+    },
+    "cost": 0.000128,
+    "judge_label": "good",
+    "judge_reasoning": "The response correctly states that a specific recipe for sushi is not available, which aligns with the directive to accurately identify when a recipe is not present. However, it offers to help find something similar, which could be seen as unnecessarily extending the conversation without providing a recipe. Overall, the identification of the absence of the recipe is a key factor here, deeming it a correct response in context."
+  },
+  {
+    "question": "What temperature should I set my oven to for the lava cake?",
+    "category": "recipe-detail",
+    "type": "specific",
+    "output": "For the Chocolate Lava Cake, you should set your oven to **425\u00b0F**. Bake for 12-14 minutes, ensuring the edges are firm but the center remains soft. Enjoy your baking!",
+    "execution_time": 3.56,
+    "tokens": {
+      "input_tokens": 1258,
+      "output_tokens": 75,
+      "total_tokens": 1333
+    },
+    "cost": 0.000234,
+    "judge_label": "good",
+    "judge_reasoning": "The response accurately states the oven temperature as 425\u00b0F for the Chocolate Lava Cake, which aligns with typical baking instructions. It provides specific baking times (12-14 minutes), ensuring the edges are firm but the center remains soft, which is a relevant instruction. The response does not invent any information outside of the recipe collection nor does it hallucinate."
+  },
+  {
+    "question": "Could you walk me through a pasta recipe from your collection?",
+    "category": "recipe-discovery",
+    "type": "paraphrase",
+    "output": "Here's a simple and classic recipe for **Spaghetti Carbonara**:\n\n### Ingredients\n- Spaghetti\n- Guanciale\n- Egg yolks\n- Pecorino Romano cheese\n- Black pepper\n- Salt\n\n### Instructions\n1. **Cook the Pasta**: Bring a pot of salted water to a boil and cook the spaghetti according to the package instructions.\n2. **Prepare the Guanciale**: In a pan, crisp the guanciale over medium heat until it becomes golden and crispy.\n3. **Make the Sauce**: While the pasta is cooking, whisk together the egg yolks with grated pecorino romano and a generous amount of black pepper.\n4. **Drain the Pasta**: Once the pasta is cooked, drain it, but reserve some of the pasta water.\n5. **Combine**: Add the hot spaghetti to the pan with guanciale. Quickly stir in the egg mixture off the heat to avoid scrambling the eggs. \n6. **Adjust Consistency**: If needed, add reserved pasta water a little at a time until you achieve a creamy sauce consistency.\n7. **Serve**: Plate immediately and top with extra pecorino romano cheese.\n\n### Serving Size\nThis recipe serves 4.\n\nFeel free to ask if you need any more information!",
+    "execution_time": 6.0,
+    "tokens": {
+      "input_tokens": 1266,
+      "output_tokens": 299,
+      "total_tokens": 1565
+    },
+    "cost": 0.000369,
+    "judge_label": "good",
+    "judge_reasoning": "The response provides a Spaghetti Carbonara recipe with ingredients and steps for preparation, which aligns with the expected usage of the recipe collection. It accurately lists the recipe components and method without any fabricated details or general cooking advice."
+  },
+  {
+    "question": "Which Italian dishes can you help me prepare without meat?",
+    "category": "recipe-discovery",
+    "type": "cuisine-and-diet",
+    "output": "Here are some Italian dishes you can prepare without meat:\n\n1. **Classic Margherita Pizza**\n   - **Prep Time**: 20 minutes\n   - **Cook Time**: 15 minutes\n   - **Serves**: 4\n   - **Ingredients**: Pizza dough, San Marzano tomatoes, fresh mozzarella, fresh basil, olive oil, salt.\n   - **Tags**: Vegetarian, classic.\n\n2. **Mushroom Risotto**\n   - **Prep Time**: 10 minutes\n   - **Cook Time**: 35 minutes\n   - **Serves**: 4\n   - **Ingredients**: Arborio rice, mixed mushrooms, onion, garlic, white wine, vegetable broth, parmesan cheese, butter, olive oil, thyme.\n   - **Tags**: Vegetarian, comfort-food.\n\nIf you're interested in a full recipe for any of these, just let me know!",
+    "execution_time": 4.27,
+    "tokens": {
+      "input_tokens": 839,
+      "output_tokens": 212,
+      "total_tokens": 1051
+    },
+    "cost": 0.000253,
+    "judge_label": "good",
+    "judge_reasoning": "The agent provided accurate information from the recipe collection about Italian dishes without meat, listing two specific recipes along with their details. No incorrect information or hallucinations are present, and it appropriately identified the type of dishes requested. Therefore, the response is considered good."
+  },
+  {
+    "question": "I have mushrooms and rice; do you have a recipe for that?",
+    "category": "recipe-discovery",
+    "type": "ingredient-search",
+    "output": "I found a recipe for **Mushroom Risotto** that uses mushrooms and rice! Here are the details:\n\n### Mushroom Risotto\n\n**Cuisine:** Italian  \n**Difficulty:** Medium  \n**Prep Time:** 10 minutes  \n**Cook Time:** 35 minutes  \n**Servings:** 4\n\n#### Ingredients:\n- Arborio rice\n- Mixed mushrooms\n- Onion\n- Garlic\n- White wine\n- Vegetable broth\n- Parmesan cheese\n- Butter\n- Olive oil\n- Thyme\n\n#### Instructions:\n1. Saut\u00e9 mushrooms in olive oil until golden, then set aside.\n2. In the same pan, cook onion and garlic in butter.\n3. Add arborio rice and toast for 2 minutes.\n4. Pour in white wine and stir until absorbed.\n5. Add warm broth one ladle at a time, stirring frequently, until the rice is creamy and al dente (about 18-20 minutes).\n6. Stir in the saut\u00e9ed mushrooms, parmesan, and fresh thyme.\n\nThis dish is a comforting vegetarian option. Enjoy your cooking!",
+    "execution_time": 5.01,
+    "tokens": {
+      "input_tokens": 1600,
+      "output_tokens": 254,
+      "total_tokens": 1854
+    },
+    "cost": 0.000392,
+    "judge_label": "good",
+    "judge_reasoning": "The response accurately provides a recipe for Mushroom Risotto using only the information from the recipe collection, including all relevant details such as ingredients, instructions, and cooking times. It does not include any invented advice or incorrect information, and it directly answers the user's question about having mushrooms and rice. Therefore, it is a \"good\" response."
+  },
+  {
+    "question": "Does your carbonara recipe say bacon can replace guanciale?",
+    "category": "substitution",
+    "type": "unsupported-guidance",
+    "output": "The carbonara recipe I found specifically calls for guanciale and does not mention that bacon can be used as a replacement.",
+    "execution_time": 2.34,
+    "tokens": {
+      "input_tokens": 710,
+      "output_tokens": 44,
+      "total_tokens": 754
+    },
+    "cost": 0.000133,
+    "judge_label": "good",
+    "judge_reasoning": "The response accurately reflects the information in the recipe by stating that it specifically calls for guanciale and does not mention bacon as a replacement. No incorrect information is provided, and the response stays strictly within the recipe data."
+  },
+  {
+    "question": "If I use soy milk instead of milk will your banana pancakes still work?",
+    "category": "substitution",
+    "type": "unsupported-guidance",
+    "output": "I don't have a specific banana pancake recipe to confirm that substitution. However, if you'd like, I can search for banana pancake recipes and check if any of them mention using soy milk. Would you like me to do that?",
+    "execution_time": 1.09,
+    "tokens": {
+      "input_tokens": 315,
+      "output_tokens": 47,
+      "total_tokens": 362
+    },
+    "cost": 7.5e-05,
+    "judge_label": "bad",
+    "judge_reasoning": "The assistant correctly identifies that it does not have a banana pancake recipe available in its collection, which is a proper response. However, it implies it can search for recipes which it should not be able to do, indicating uncertainty and asking to check when the information should be a simple decline. Therefore, while it does specify the absence of a recipe, it fails to fully conform to the standards outlined, leading to a less-than-ideal interaction."
+  },
+  {
+    "question": "Can I swap coconut oil for butter in your chocolate lava cake?",
+    "category": "substitution",
+    "type": "unsupported-guidance",
+    "output": "I currently don't have a recipe for chocolate lava cake in my collection, so I can't provide specific information about that recipe or any ingredient substitutions. If you'd like, I can search for chocolate lava cake recipes or help you find another dessert. Let me know!",
+    "execution_time": 1.3,
+    "tokens": {
+      "input_tokens": 313,
+      "output_tokens": 53,
+      "total_tokens": 366
+    },
+    "cost": 7.9e-05,
+    "judge_label": "good",
+    "judge_reasoning": "The assistant correctly identified that it does not have a chocolate lava cake recipe in its collection and declined to provide substitution information. This response aligns with the evaluation criteria by not attempting to answer a question outside of its available recipes."
+  },
+  {
+    "question": "Does the Caesar salad contain anchovies even though it is a salad?",
+    "category": "dietary",
+    "type": "ingredient-check",
+    "output": "Caesar salad traditionally includes anchovies as part of the dressing, giving it a distinct flavor. However, the inclusion of anchovies can vary based on personal preference or specific recipes. If you're looking for a specific Caesar salad recipe, I can help find one for you!",
+    "execution_time": 2.67,
+    "tokens": {
+      "input_tokens": 314,
+      "output_tokens": 56,
+      "total_tokens": 370
+    },
+    "cost": 8.1e-05,
+    "judge_label": "bad",
+    "judge_reasoning": "The agent provides information about anchovies in Caesar salad dressing, but it does not limit its statement to the specific collection of recipes. It implies variations that might exist outside the provided recipes, which is considered hallucination. Therefore, this response is not acceptable."
+  },
+  {
+    "question": "Can someone avoiding fish sauce eat the Thai green curry as written?",
+    "category": "dietary",
+    "type": "ingredient-check",
+    "output": "The Thai Green Curry recipe includes fish sauce as one of its ingredients. Therefore, if someone is avoiding fish sauce, they would need to modify the recipe by either omitting the fish sauce or using a suitable substitute. Would you like more details about the recipe?",
+    "execution_time": 1.97,
+    "tokens": {
+      "input_tokens": 789,
+      "output_tokens": 72,
+      "total_tokens": 861
+    },
+    "cost": 0.000162,
+    "judge_label": "bad",
+    "judge_reasoning": "The agent provided information that goes beyond the recipe by suggesting modifications (omitting or substituting fish sauce) not found in the recipe collection. Thus, it is incorrect as it invents cooking advice."
+  },
+  {
+    "question": "Which of your recipes are labeled vegan?",
+    "category": "dietary",
+    "type": "tag-search",
+    "output": "Here are some vegan recipes you might enjoy:\n\n1. **Vegetable Stir Fry**\n   - **Cuisine:** Chinese\n   - **Prep Time:** 15 min\n   - **Cook Time:** 10 min\n   - **Serves:** 3\n   - **Ingredients:** broccoli, bell pepper, carrot, snap peas, soy sauce, sesame oil, garlic, ginger, cornstarch, rice\n\n2. **Falafel Wrap**\n   - **Cuisine:** Middle Eastern\n   - **Prep Time:** 30 min\n   - **Cook Time:** 15 min\n   - **Serves:** 4\n   - **Ingredients:** chickpeas, onion, garlic, parsley, cilantro, cumin, coriander, flour, baking powder, pita bread, tahini, lettuce, tomato, pickles\n\n3. **Miso Soup**\n   - **Cuisine:** Japanese\n   - **Prep Time:** 5 min\n   - **Cook Time:** 10 min\n   - **Serves:** 4\n   - **Ingredients:** dashi stock, white miso paste, silken tofu, wakame seaweed, green onion\n\nLet me know if you would like more information about any of these recipes!",
+    "execution_time": 4.59,
+    "tokens": {
+      "input_tokens": 854,
+      "output_tokens": 269,
+      "total_tokens": 1123
+    },
+    "cost": 0.000289,
+    "judge_label": "good",
+    "judge_reasoning": "The assistant provided a list of vegan recipes with details about each, including their ingredients, prep time, and cook time. Since this information is assumed to be derived from the recipe collection and corresponds to the request, the response meets the criteria for a good response. However, I cannot verify their accuracy or presence in the recipe collection based purely on the given information."
+  },
+  {
+    "question": "What are the calories per serving in your falafel wrap?",
+    "category": "unavailable-information",
+    "type": "nutrition",
+    "output": "I currently don't have the specific recipe for a falafel wrap in my collection. If you'd like, I can help you find a different recipe or something similar!",
+    "execution_time": 1.09,
+    "tokens": {
+      "input_tokens": 312,
+      "output_tokens": 34,
+      "total_tokens": 346
+    },
+    "cost": 6.7e-05,
+    "judge_label": "good",
+    "judge_reasoning": "The agent correctly identified that there is no falafel wrap recipe in the collection. It also appropriately declines to provide information which is not available. The response is clear and does not attempt to make up any information."
+  },
+  {
+    "question": "How much protein does your mushroom risotto provide?",
+    "category": "unavailable-information",
+    "type": "nutrition",
+    "output": "I don't have the nutritional information, including protein content, for the mushroom risotto. However, I can help you find a recipe for mushroom risotto if you'd like! Would you like me to do that?",
+    "execution_time": 1.58,
+    "tokens": {
+      "input_tokens": 310,
+      "output_tokens": 44,
+      "total_tokens": 354
+    },
+    "cost": 7.3e-05,
+    "judge_label": "good",
+    "judge_reasoning": "The assistant correctly identified that it does not have nutritional information and offered to find a recipe instead. This aligns with the criteria for a \"good\" response because it did not attempt to provide invented information, and instead redirected to an available recipe."
+  },
+  {
+    "question": "Can you give me the ingredients and instructions for ramen?",
+    "category": "unavailable-information",
+    "type": "missing-recipe",
+    "output": "I don't have a specific ramen recipe in my collection. If you're looking for a different type of noodle dish or a specific variation of ramen, let me know!",
+    "execution_time": 3.18,
+    "tokens": {
+      "input_tokens": 652,
+      "output_tokens": 51,
+      "total_tokens": 703
+    },
+    "cost": 0.000128,
+    "judge_label": "bad",
+    "judge_reasoning": "The agent correctly states that it does not have a specific ramen recipe in its collection, adhering to the guideline of acknowledging when a recipe is not available. However, it could be seen as slightly misleading by suggesting it might have different noodle dishes or variations of ramen, which could lead to confusion about what recipes are actually available."
+  },
+  {
+    "question": "Can you tell me the weather forecast for tomorrow?",
+    "category": "out-of-scope",
+    "type": "non-recipe",
+    "output": "I'm here to help with recipes and cooking questions. If you need a recipe or information related to cooking, feel free to ask!",
+    "execution_time": 1.13,
+    "tokens": {
+      "input_tokens": 310,
+      "output_tokens": 28,
+      "total_tokens": 338
+    },
+    "cost": 6.3e-05,
+    "judge_label": "good",
+    "judge_reasoning": "The response correctly identifies that the question is out of scope, as it does not pertain to recipes or cooking. The agent appropriately declines to answer the weather question and invites the user to ask about recipes instead."
+  },
+  {
+    "question": "How should I repair a leaking kitchen sink?",
+    "category": "out-of-scope",
+    "type": "non-recipe",
+    "output": "I can't provide guidance on repairing a leaking kitchen sink. However, I can help you find a recipe if you're looking for something delicious to cook! Just let me know what you're interested in.",
+    "execution_time": 1.16,
+    "tokens": {
+      "input_tokens": 309,
+      "output_tokens": 40,
+      "total_tokens": 349
+    },
+    "cost": 7e-05,
+    "judge_label": "good",
+    "judge_reasoning": "The agent appropriately declined to answer a question outside its scope, which is about cooking. It also redirected the user towards recipes, which aligns with its capabilities. Therefore, the response is considered good."
+  },
+  {
+    "question": "Who won last night's basketball game?",
+    "category": "out-of-scope",
+    "type": "non-recipe",
+    "output": "I can\u2019t help with sports scores or news. However, if you have any cooking or recipe questions, feel free to ask!",
+    "execution_time": 0.99,
+    "tokens": {
+      "input_tokens": 307,
+      "output_tokens": 28,
+      "total_tokens": 335
+    },
+    "cost": 6.3e-05,
+    "judge_label": "good",
+    "judge_reasoning": "The assistant correctly identified that the question was out of scope, declining to provide sports information and inviting cooking or recipe inquiries. There is no hallucination or error present in the response."
+  },
+  {
+    "question": "Is it okay to use canned chickpeas for your falafel wrap?",
+    "category": "recipe-constraint",
+    "type": "explicit-prohibition",
+    "output": "I don't have a specific recipe for falafel wraps to verify that, but using canned chickpeas is a common practice in many falafel recipes. If you'd like, I can look up some falafel wrap recipes to see if they mention using canned chickpeas. Would you like me to do that?",
+    "execution_time": 1.63,
+    "tokens": {
+      "input_tokens": 314,
+      "output_tokens": 62,
+      "total_tokens": 376
+    },
+    "cost": 8.4e-05,
+    "judge_label": "bad",
+    "judge_reasoning": "The assistant incorrectly stated that it can't verify the use of canned chickpeas for falafel wraps due to a lack of a specific recipe. However, it should have simply stated that it does not have a recipe for falafel wraps at all and therefore cannot provide an answer about the ingredients. This is a case of incorrectly identifying the availability of a recipe, which falls under providing incorrect information about recipe availability."
+  },
+  {
+    "question": "Should the miso soup keep boiling after the miso paste goes in?",
+    "category": "recipe-constraint",
+    "type": "explicit-instruction",
+    "output": "Miso soup should not be kept boiling after the miso paste is added. It\u2019s best to remove it from heat to preserve the flavor and beneficial properties of the miso. Miso is a fermented product, and boiling it can diminish its taste and health benefits. If you're looking for specific recipes, let me know!",
+    "execution_time": 1.29,
+    "tokens": {
+      "input_tokens": 315,
+      "output_tokens": 67,
+      "total_tokens": 382
+    },
+    "cost": 8.7e-05,
+    "judge_label": "bad",
+    "judge_reasoning": "The assistant provided general cooking advice regarding miso soup that is not found in the recipe collection. This includes specific instructions about heat and preservation of flavor, which counts as hallucination since it goes beyond the recipe data."
+  },
+  {
+    "question": "For your carbonara should the egg mixture go into the pan while it is still on the heat?",
+    "category": "recipe-constraint",
+    "type": "explicit-instruction",
+    "output": "I don't have a specific carbonara recipe to provide details about the preparation method. However, the traditional way is to combine the egg mixture with the pasta off the heat to avoid scrambling the eggs. Would you like me to find a carbonara recipe for you?",
+    "execution_time": 1.24,
+    "tokens": {
+      "input_tokens": 320,
+      "output_tokens": 54,
+      "total_tokens": 374
+    },
+    "cost": 8e-05,
+    "judge_label": "bad",
+    "judge_reasoning": "The agent provided a cooking method that is not found in a specific recipe collection and made a claim about traditional preparation without referencing any recipe. It also incorrectly stated that it cannot provide a carbonara recipe when it should have declined the inquiry without such a recipe available. Thus, the response does not align with the criteria for a \"good\" response."
+  },
+  {
+    "question": "Can I substitute almond milk in the pancakes?",
+    "category": "substitution",
+    "type": "supported-guidance",
+    "output": "I don't have specific information about that recipe. If you have a pancake recipe in mind, I can help you find it or suggest alternatives.",
+    "execution_time": 1.11,
+    "tokens": {
+      "input_tokens": 309,
+      "output_tokens": 30,
+      "total_tokens": 339
+    },
+    "cost": 6.4e-05,
+    "judge_label": "bad",
+    "judge_reasoning": "The answer did not provide any information from the recipe collection and offered to suggest alternatives instead, which is outside the scope of the task. Therefore, it did not meet the criteria for a good response."
+  }
+]
